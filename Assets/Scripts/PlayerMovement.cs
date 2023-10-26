@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    protected Rigidbody2D rb;
 
     /// <summary>
     /// WASD inputs.
     /// </summary>
-    private Vector2 moveInput;
+    protected Vector2 moveInput;
 
     /// <summary>
     /// True if pressed X. False otherwise.
     /// </summary>
-    private bool wantsToDash;
+    protected bool wantsToDash;
 
     [SerializeField] protected float moveSpeed = 5f;
     [SerializeField] protected Vector2 dashMultiplier = new Vector2(25f, 20f);
