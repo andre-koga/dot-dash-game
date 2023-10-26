@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (!CanDash())
             return;
 
-        Vector2 dashVelocity = moveInput == Vector2.zero ? Vector2.up : moveInput * dashMultiplier;
+        Vector2 dashVelocity = (moveInput == Vector2.zero ? Vector2.up : moveInput) * dashMultiplier;
         rb.velocity = dashVelocity;
     }
 
